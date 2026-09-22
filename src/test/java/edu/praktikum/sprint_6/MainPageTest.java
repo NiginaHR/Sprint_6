@@ -3,7 +3,7 @@ package edu.praktikum.sprint_6;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class MainPageTest extends GeneralTest {
+public class MainPageTest extends BaseTest {
 
     @Test
     public void testMainPageLoads() {
@@ -18,7 +18,7 @@ public class MainPageTest extends GeneralTest {
         MainPage mainPage = new MainPage(driver);
         mainPage.open();
 
-        mainPage.clickOrderButton();
+        mainPage.clickFirstOrderButton();
 
         OrderPage orderPage = new OrderPage(driver);
         assertTrue(orderPage.isFormDisplayed(), "После клика форма заказа не отобразилась");

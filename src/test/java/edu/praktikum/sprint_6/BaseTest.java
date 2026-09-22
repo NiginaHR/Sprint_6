@@ -8,7 +8,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import java.time.Duration;
 
-public class GeneralTest {
+public class BaseTest {
     protected WebDriver driver;
     protected WebDriverWait wait;
 
